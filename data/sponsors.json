@@ -3,7 +3,6 @@
     "name": "Unstop",
     "label": "Sponsored by",
     "logo": "/sponsors/unstop.png",
-    "_todo": "Drop the Unstop logo in public/sponsors/ and set logo to its path, e.g. /sponsors/unstop.png",
     "url": "#"
   },
   "partners": [
