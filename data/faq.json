@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "q": "Who can participate?",
+      "a": "Any student currently enrolled in a college or university. Students from every discipline are welcome, not only computer science."
+    },
+    {
+      "q": "How big can my team be?",
+      "a": "Teams have 2 to 5 members. Students from different institutions can team up, subject to the official participation guidelines."
+    },
+    {
+      "q": "When does registration close?",
+      "a": "Registrations close on 18 November 2026. Shortlisting happens through a remote presentation and video round before the event."
+    },
+    {
+      "q": "Is it online or offline?",
+      "a": "ALGONEX 1.0 is fully offline. The 30-hour hackathon runs on campus at Maya Devi University, Selaqui, Dehradun on 27 and 28 November 2026."
+    },
+    {
+      "q": "Is food included?",
+      "a": "Yes. Breakfast, lunch, evening snacks and dinner on Day 1, breakfast and lunch on Day 2, plus tea and coffee on both days, all through food coupons in your welcome kit."
+    },
+    {
+      "q": "How is judging done?",
+      "a": "Judges score your work at the 10, 20 and 30-hour marks. The final score weighs these 25%, 30% and 45%, so the work you finish on site matters most."
+    },
+    {
+      "q": "What should I bring?",
+      "a": "Your laptop, charger, college ID and any hardware your project needs. Power strips and Wi-Fi are provided at every team table."
+    }
+  ]
+}

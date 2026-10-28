@@ -1,0 +1,34 @@
+{
+  "registrationPartner": {
+    "name": "Unstop",
+    "label": "Sponsored by",
+    "logo": "/sponsors/unstop.png",
+    "_todo": "Drop the Unstop logo in public/sponsors/ and set logo to its path, e.g. /sponsors/unstop.png",
+    "url": "#"
+  },
+  "partners": [
+    {
+      "name": "Maya Devi University",
+      "role": "Host Institution",
+      "wide": true,
+      "logo": "/brand/mdu-logo.png"
+    },
+    {
+      "name": "Searching Eyes Club",
+      "role": "School of Computer Engineering & Applications",
+      "logo": "/brand/searching-eyes-club.webp"
+    }
+  ],
+  "pitch": {
+    "title": "Partner with ALGONEX",
+    "body": "Put your brand in front of emerging talent. Sponsors get visibility, recruitment access, product demos and lasting industry and academia connections.",
+    "tiers": [
+      { "name": "Featured Partner", "amount": 50000, "highlight": "Shown as \"in association with\" on the main poster" },
+      { "name": "Gold", "amount": 25000, "highlight": "Top sponsor strip, dedicated social post, demo session" },
+      { "name": "Silver", "amount": 10000, "highlight": "Top sponsor strip, website and campus branding" },
+      { "name": "Innovation Partner", "amount": 5000, "highlight": "Logo on selected materials and a stage mention" },
+      { "name": "Award Sponsor", "amount": 5000, "highlight": "Your brand named alongside a special award" }
+    ],
+    "inKind": "Cloud credits, developer tools, software licences, prizes and merchandise are welcome too. Companies can also sponsor a dedicated problem statement."
+  }
+}

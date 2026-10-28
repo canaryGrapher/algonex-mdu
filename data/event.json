@@ -1,0 +1,41 @@
+{
+  "name": "ALGONEX",
+  "edition": "1.0",
+  "fullName": "ALGONEX 1.0",
+  "kicker": "30-Hour National Level Hackathon",
+  "format": "Offline Hackathon",
+  "tagline": "Unleash your inner builder. Bring your ideas to life.",
+  "shortPitch": "Ideas to product. Make it real.",
+  "description": "ALGONEX 1.0 is a 30-hour national level offline hackathon at Maya Devi University, Dehradun. Student teams ideate, build and pitch technology solutions to real-world problems before a panel of judges, across AI, web, blockchain, IoT, cybersecurity and more.",
+  "mission": "Hackathons let students move beyond theory and apply what they know to practical challenges. ALGONEX brings together talented students from different institutions to exchange ideas, experiment with emerging technologies and build solutions that matter.",
+  "dates": {
+    "display": "27th - 28th November, 2026",
+    "short": "27-28 Nov",
+    "start": "2026-11-27T10:30:00+05:30",
+    "end": "2026-11-28T16:30:00+05:30",
+    "durationHours": 30
+  },
+  "registration": {
+    "url": "#",
+    "_todo": "Replace url with the Onstop registration link",
+    "deadline": "2026-11-18T23:59:00+05:30",
+    "deadlineDisplay": "18 November 2026",
+    "ctaLabel": "Register Now"
+  },
+  "prizePoolDisplay": "₹2 lakh+",
+  "teamSize": "2 to 5 members",
+  "eligibility": "All college and university students",
+  "venue": {
+    "name": "Maya Devi University",
+    "address": "Selaqui, Dehradun, Uttarakhand",
+    "display": "Maya Devi University, Dehradun",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Maya+Devi+University+Selaqui+Dehradun"
+  },
+  "website": "https://hackathon.mdu.edu.in",
+  "websiteDisplay": "hackathon.mdu.edu.in",
+  "email": "hackathon@mdu.edu.in",
+  "organizer": {
+    "name": "Maya Devi University",
+    "logo": "/brand/mdu-logo.png"
+  }
+}

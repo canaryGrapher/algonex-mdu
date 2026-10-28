@@ -1,0 +1,46 @@
+{
+  "headline": "₹2 lakh+",
+  "currency": "INR",
+  "podium": [
+    { "rank": 2, "position": "First Runner-Up", "title": "Overall Second Place", "amount": 45000 },
+    { "rank": 1, "position": "Winner", "title": "Overall Winner", "amount": 65000 },
+    { "rank": 3, "position": "Second Runner-Up", "title": "Overall Third Place", "amount": 30000 }
+  ],
+  "specialAwards": [
+    {
+      "id": "innovation",
+      "title": "Best Innovation",
+      "focus": "Originality, novelty and creative use of technology.",
+      "amount": 5000
+    },
+    {
+      "id": "technical",
+      "title": "Best Technical Implementation",
+      "focus": "Working functionality, technical quality, architecture and integration.",
+      "amount": 5000
+    },
+    {
+      "id": "social",
+      "title": "Best Social Impact",
+      "focus": "Importance of the problem, potential benefit, inclusivity and practicality.",
+      "amount": 5000
+    },
+    {
+      "id": "ux",
+      "title": "Best User Experience & Design",
+      "focus": "Usability, interface and interaction design, accessibility and user journey.",
+      "amount": 5000
+    },
+    {
+      "id": "emerging",
+      "title": "Best Emerging Idea & Future Potential",
+      "focus": "Scalability, sustainability, adoption potential and feasibility of future development.",
+      "amount": 5000
+    }
+  ],
+  "notes": [
+    "Podium teams remain eligible for special recognition awards, so one team can win both.",
+    "Every special award is judged separately on its own weighted scorecard.",
+    "Every participant takes home a certificate and goodies."
+  ]
+}

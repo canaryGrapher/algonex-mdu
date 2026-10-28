@@ -1,0 +1,78 @@
+{
+  "intro": "Every criterion is scored from 1 to 5 against evidence, not polish. Weighted points add up to a stage score out of 100.",
+  "scale": [
+    { "score": 1, "label": "Weak" },
+    { "score": 2, "label": "Limited" },
+    { "score": 3, "label": "Adequate" },
+    { "score": 4, "label": "Strong" },
+    { "score": 5, "label": "Excellent" }
+  ],
+  "aggregation": [
+    { "stage": "Checkpoint 1", "share": 25 },
+    { "stage": "Checkpoint 2", "share": 30 },
+    { "stage": "Final Judging", "share": 45 }
+  ],
+  "aggregationNote": "Stage 1 is an elimination gate and does not count toward the final on-site score.",
+  "stages": [
+    {
+      "id": "stage1",
+      "name": "Stage 1",
+      "subtitle": "Remote presentation and video",
+      "criteria": [
+        { "name": "Problem understanding and relevance", "weight": 20 },
+        { "name": "Innovation and originality", "weight": 20 },
+        { "name": "Solution approach and feasibility", "weight": 20 },
+        { "name": "Potential impact and value", "weight": 15 },
+        { "name": "Presentation clarity and structure", "weight": 15 },
+        { "name": "Video or demo evidence", "weight": 10 }
+      ]
+    },
+    {
+      "id": "cp1",
+      "name": "Checkpoint 1",
+      "subtitle": "10-hour mark",
+      "criteria": [
+        { "name": "Technical progress and proof of work", "weight": 25 },
+        { "name": "Solution design and architecture", "weight": 20 },
+        { "name": "Problem validation and user need", "weight": 15 },
+        { "name": "Feasibility and execution plan", "weight": 15 },
+        { "name": "Communication and answers", "weight": 15 },
+        { "name": "Team collaboration and roles", "weight": 10 }
+      ]
+    },
+    {
+      "id": "cp2",
+      "name": "Checkpoint 2",
+      "subtitle": "20-hour mark",
+      "criteria": [
+        { "name": "Functional progress and working components", "weight": 25 },
+        { "name": "Technical execution and quality", "weight": 20 },
+        { "name": "Innovation and differentiation", "weight": 15 },
+        { "name": "User value and usability", "weight": 15 },
+        { "name": "Progress against plan", "weight": 10 },
+        { "name": "Demo clarity", "weight": 10 },
+        { "name": "Team collaboration", "weight": 5 }
+      ]
+    },
+    {
+      "id": "final",
+      "name": "Final Judging",
+      "subtitle": "30-hour mark",
+      "criteria": [
+        { "name": "Working prototype and completeness", "weight": 25 },
+        { "name": "Technical quality and implementation", "weight": 20 },
+        { "name": "Innovation and differentiation", "weight": 15 },
+        { "name": "Impact and problem fit", "weight": 15 },
+        { "name": "User experience and accessibility", "weight": 10 },
+        { "name": "Final presentation and demo", "weight": 10 },
+        { "name": "Feasibility and next steps", "weight": 5 }
+      ]
+    }
+  ],
+  "principles": [
+    "Judges score independently before any discussion.",
+    "Conflicts of interest are disclosed and judges are reassigned.",
+    "The same rubric, time limits and question time apply to every team.",
+    "Privacy, security, safety and accessibility count. Complexity alone does not."
+  ]
+}

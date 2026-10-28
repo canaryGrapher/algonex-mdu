@@ -1,0 +1,26 @@
+{
+  "nav": [
+    { "label": "About", "href": "#about" },
+    { "label": "Tracks", "href": "#tracks" },
+    { "label": "Timeline", "href": "#timeline" },
+    { "label": "Prizes", "href": "#prizes" },
+    { "label": "Judging", "href": "#judging" },
+    { "label": "FAQ", "href": "#faq" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "stats": [
+    { "value": 30, "suffix": "", "label": "Hours of building" },
+    { "value": 2, "prefix": "₹", "suffix": "L+", "label": "Prize pool" },
+    { "value": 5, "suffix": "", "label": "Special awards" },
+    { "value": 5, "prefix": "2-", "suffix": "", "label": "Members per team" }
+  ],
+  "marquee": ["Ideate", "Build", "Pitch", "Ship", "30 Hours", "National Level", "Offline", "Make it real"],
+  "lottie": {
+    "desktop": "/lottie/hero-desktop.json",
+    "mobile": "/lottie/hero-mobile.json"
+  },
+  "seo": {
+    "title": "ALGONEX 1.0 | 30-Hour National Hackathon at Maya Devi University",
+    "description": "ALGONEX 1.0 is a 30-hour national level offline hackathon at Maya Devi University, Dehradun on 27-28 November 2026. Prize pool ₹2 lakh+. Register now."
+  }
+}

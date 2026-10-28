@@ -1,0 +1,25 @@
+{
+  "welcomeKit": [
+    { "id": "badge", "title": "ID card and badge", "detail": "Issued at check-in from the final registration list." },
+    { "id": "stationery", "title": "Branded pen and notepad", "detail": "A Maya Devi University stationery set." },
+    { "id": "schedule", "title": "Printed event schedule", "detail": "Event, food and co-curricular timings." },
+    { "id": "coupons", "title": "Food coupons", "detail": "Covering every meal and refreshment on the plan." }
+  ],
+  "takeHome": [
+    { "id": "certificate", "title": "Participation certificate", "detail": "For every participant." },
+    { "id": "goodie", "title": "Goodies", "detail": "The same standard goodie for everyone." },
+    { "id": "letter", "title": "Thank-you letter", "detail": "A note of appreciation from the organizers." }
+  ],
+  "meals": [
+    { "day": "Day 1", "items": ["Breakfast", "Lunch", "Evening snacks", "Dinner", "Tea and coffee"] },
+    { "day": "Day 2", "items": ["Breakfast", "Lunch", "Tea and coffee"] }
+  ],
+  "onGround": [
+    { "id": "workspace", "title": "Team workspace", "detail": "A labelled table for every team with seating for up to five." },
+    { "id": "power", "title": "Power and Wi-Fi", "detail": "A power strip on every table and tested, reliable internet." },
+    { "id": "medical", "title": "Medical support", "detail": "First-aid kit and a nursing assistant on call through the event." },
+    { "id": "safety", "title": "Overnight safety", "detail": "Security staff, approved movement zones and a buddy system at night." },
+    { "id": "welfare", "title": "Women's welfare", "detail": "A private room, a dedicated welfare contact and sanitary supplies." },
+    { "id": "water", "title": "Water and rest", "detail": "Drinking water around the clock and a quiet space to recharge." }
+  ]
+}

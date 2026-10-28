@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "id": "register",
+      "tag": "Now open",
+      "title": "Registrations",
+      "time": "Until 18 Nov 2026",
+      "description": "Form a team of 2 to 5 and register. Open to students from every college and university."
+    },
+    {
+      "id": "stage1",
+      "tag": "Stage 1",
+      "title": "Remote Elimination",
+      "time": "Before the event",
+      "description": "Submit your team presentation and a video or demo. Shortlisted teams are invited to campus."
+    },
+    {
+      "id": "kickoff",
+      "tag": "T+0h",
+      "title": "Hacking Begins",
+      "time": "Fri, 27 Nov · 10:30 IST",
+      "description": "Check in, collect your welcome kit and start building. The 30-hour clock starts now."
+    },
+    {
+      "id": "checkpoint1",
+      "tag": "T+10h",
+      "title": "Checkpoint 1",
+      "time": "Fri, 27 Nov · 20:30 IST",
+      "description": "Problem understanding, solution design, early proof of work and your plan for the next 20 hours."
+    },
+    {
+      "id": "checkpoint2",
+      "tag": "T+20h",
+      "title": "Checkpoint 2",
+      "time": "Sat, 28 Nov · 06:30 IST",
+      "description": "Working components, technical execution, usability and how you handled blockers."
+    },
+    {
+      "id": "finals",
+      "tag": "T+30h",
+      "title": "Final Judging & Awards",
+      "time": "Sat, 28 Nov · 16:30 IST",
+      "description": "Demo your final prototype to the panel. Winners and special awards are announced."
+    }
+  ]
+}

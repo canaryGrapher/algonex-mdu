@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256"><defs>
+<linearGradient id="g-leg" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#FFE3D8"/>
+  <stop offset="0.45" stop-color="#FF9E8C"/>
+  <stop offset="1" stop-color="#8A1F12"/>
+</linearGradient>
+<linearGradient id="g-leg2" x1="1" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#FFFFFF"/>
+  <stop offset="0.5" stop-color="#FF6F5B"/>
+  <stop offset="1" stop-color="#8A1F12"/>
+</linearGradient>
+<linearGradient id="g-silk" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#FFFFFF"/>
+  <stop offset="1" stop-color="#FFE3D8"/>
+</linearGradient>
+<linearGradient id="g-word" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#FFFFFF"/>
+  <stop offset="1" stop-color="#FFE3D8"/>
+</linearGradient>
+<filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+  <feGaussianBlur stdDeviation="7" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+
+<radialGradient id="bg" cx="0.25" cy="0.15" r="1.1">
+  <stop offset="0" stop-color="#8A1F12"/>
+  <stop offset="0.55" stop-color="#3A0B08"/>
+  <stop offset="1" stop-color="#0A0304"/>
+</radialGradient>
+</defs><rect width="256" height="256" rx="58" fill="url(#bg)"/><g transform="translate(28 28) scale(1)">
+<g filter="url(#glow)" stroke-linecap="round" stroke-linejoin="round" fill="none">
+  <path d="M50 134 C78 104 122 162 150 134" stroke="url(#g-silk)" stroke-width="16"/>
+  <path d="M38 168 L100 34" stroke="url(#g-leg)" stroke-width="26"/>
+  <path d="M100 34 L162 168" stroke="url(#g-leg2)" stroke-width="26"/>
+</g>
+<g fill="#FFFFFF" filter="url(#glow)">
+  <circle cx="100" cy="34" r="9"/>
+  <circle cx="38" cy="168" r="7"/>
+  <circle cx="162" cy="168" r="7"/>
+</g>
+</g></svg>

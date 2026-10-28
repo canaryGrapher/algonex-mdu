@@ -1,0 +1,37 @@
+{
+  "email": "hackathon@mdu.edu.in",
+  "people": [
+    {
+      "id": "vaibhav",
+      "initials": "VS",
+      "name": "Vaibhav Singh",
+      "role": "Event Manager",
+      "phone": "+91 9682424582",
+      "email": "vaibhav.singh25@mdu.edu.in"
+    },
+    {
+      "id": "shivam",
+      "initials": "SB",
+      "name": "Shivam Bhatnagar",
+      "role": "Event Manager",
+      "phone": "+91 7668040718",
+      "email": "shivam.bhatnagar25@mdu.edu.in"
+    },
+    {
+      "id": "rbsingh",
+      "initials": "RS",
+      "name": "Dr. RB Singh",
+      "role": "Dean of Academics",
+      "phone": "+91 9458170789",
+      "email": ""
+    },
+    {
+      "id": "smita",
+      "initials": "SJ",
+      "name": "Smita Juyal",
+      "role": "Corporate Resources",
+      "phone": "+91 7817766406",
+      "email": ""
+    }
+  ]
+}

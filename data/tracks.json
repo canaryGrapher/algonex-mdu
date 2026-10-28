@@ -1,0 +1,11 @@
+{
+  "intro": "Build anything that solves a real problem. Pick a domain, or mix a few.",
+  "items": [
+    { "id": "ai", "code": "01", "title": "Artificial Intelligence", "blurb": "Models, agents and automation that turn data into decisions." },
+    { "id": "web", "code": "02", "title": "Web & App", "blurb": "Products people actually use, from first click to final flow." },
+    { "id": "blockchain", "code": "03", "title": "Blockchain", "blurb": "Trust, ownership and transparency built into the protocol." },
+    { "id": "iot", "code": "04", "title": "IoT & Hardware", "blurb": "Sensors, devices and the software that connects them." },
+    { "id": "security", "code": "05", "title": "Cybersecurity", "blurb": "Protect people, systems and data from what comes next." },
+    { "id": "open", "code": "06", "title": "Open Innovation", "blurb": "Fintech, edtech, health, climate. If it is real, it counts." }
+  ]
+}
