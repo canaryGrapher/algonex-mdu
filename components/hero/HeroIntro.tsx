@@ -9,7 +9,7 @@ import type { ProgressHandle } from "./types";
 type Props = { ref: React.Ref<ProgressHandle> };
 
 /**
- * Poster recreation shown until the Lottie files are added (or if they fail).
+ * Poster recreation shown until the hero video is added (or if they fail).
  * Plays a short entrance on load, then is scrubbed by the hero timeline.
  */
 export default function HeroIntro({ ref }: Props) {

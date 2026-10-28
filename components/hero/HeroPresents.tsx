@@ -7,7 +7,7 @@ import { gsap, useGSAP } from "@/lib/gsap";
 /**
  * Cinematic opening card: "<Maya Devi logo> presents".
  * It plays its own entrance on load and then holds. The hero scroll timeline
- * (see presentsScrub.ts) dissolves it into the Lottie once the visitor scrolls.
+ * (see presentsScrub.ts) dissolves it into the video once the visitor scrolls.
  */
 export default function HeroPresents() {
   const root = useRef<HTMLDivElement>(null);

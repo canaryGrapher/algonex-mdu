@@ -8,15 +8,15 @@ import type { ProgressHandle } from "./types";
 
 type Options = {
   section: RefObject<HTMLElement | null>;
-  /** Everything scrubbed with the clip: the Lottie, its captions, or the fallback intro. */
+  /** Everything scrubbed with the clip: the video, its captions, or the fallback intro. */
   layers: RefObject<ProgressHandle | null>[];
 };
 
 /**
  * Pinned scroll sequence for the hero:
- *  0.00 to 0.10  the "Maya Devi presents" card dissolves into the first Lottie frame
- *  0.10 to 0.70  Lottie plays frame by frame with scroll (captions ride on top)
- *  0.68 to 0.80  the Lottie's final logo dissolves into black space, where the
+ *  0.00 to 0.10  the "Maya Devi presents" card dissolves into the first video frame
+ *  0.10 to 0.70  The video plays frame by frame with scroll (captions ride on top)
+ *  0.68 to 0.80  the video's final logo dissolves into black space, where the
  *                glass logo takes over in the same spot (see scene/HeroLinkedLogo)
  *  0.82 to 0.98  Register Now call to action rises in while the glass logo glides aside
  */
@@ -47,10 +47,10 @@ export function useHeroTimeline({ section, layers }: Options) {
               onUpdate: (self) => heroProgress.set(self.progress),
             },
           })
-          .to(proxy, { p: 1, duration: M.lottieEnd - M.presentsEnd, onUpdate: sync }, M.presentsEnd)
+          .to(proxy, { p: 1, duration: M.videoEnd - M.presentsEnd, onUpdate: sync }, M.presentsEnd)
           .to(q(".scroll-hint"), { opacity: 0, duration: 0.03 }, 0)
           // Backdrop behind the clip follows its palette: red room, then navy after the warp.
-          .to(q(".hero-lottie-bg"), { backgroundColor: "#12060a", duration: 0.05 }, M.lottieEnd * 0.6)
+          .to(q(".hero-video-bg"), { backgroundColor: "#12060a", duration: 0.05 }, M.videoEnd * 0.6)
           .to(q(".hero-media"), { opacity: 0, scale: 1.12, filter: "blur(18px)", duration: span }, M.handoffStart)
           .to(q(".hero-poster"), { opacity: 0, duration: span }, M.handoffStart)
           .to(

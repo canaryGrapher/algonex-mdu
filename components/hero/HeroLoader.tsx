@@ -1,6 +1,6 @@
 import LogoMark from "@/components/ui/LogoMark";
 
-/** Shown while the hero Lottie downloads. Matches the clip's opening darkness. */
+/** Shown while the hero video downloads. Matches the clip's opening darkness. */
 export default function HeroLoader() {
   return (
     <div className="absolute inset-0 grid place-items-center bg-[#0b0406]">

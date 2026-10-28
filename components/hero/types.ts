@@ -1,6 +1,7 @@
-/** Anything the hero timeline can scrub: the Lottie player or the fallback intro. */
+/** Anything the hero timeline can scrub: the hero video or the fallback intro. */
 export type ProgressHandle = {
   setProgress: (progress: number) => void;
 };
 
-export type LottieStatus = "loading" | "ready" | "missing";
+/** "skipped" means the download was intentionally avoided (data saver, reduced motion, slow network). */
+export type HeroMediaStatus = "loading" | "ready" | "missing" | "skipped";

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { HERO_MARKS, heroProgress } from "@/lib/heroProgress";
 
-/** False while the hero Lottie fully covers the screen, so WebGL can sleep. */
+/** False while the hero video fully covers the screen, so WebGL can sleep. */
 export function useSceneActive(): boolean {
   const [active, setActive] = useState(() => heroProgress.get() >= HERO_MARKS.sceneWake);
 

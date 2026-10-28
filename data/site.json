@@ -15,9 +15,9 @@
     { "value": 5, "prefix": "2-", "suffix": "", "label": "Members per team" }
   ],
   "marquee": ["Ideate", "Build", "Pitch", "Ship", "30 Hours", "National Level", "Offline", "Make it real"],
-  "lottie": {
-    "desktop": "/lottie/hero-desktop.json",
-    "mobile": "/lottie/hero-mobile.json"
+  "heroVideo": {
+    "desktop": "/video/hero-desktop.mp4",
+    "mobile": "/video/hero-mobile.mp4"
   },
   "seo": {
     "title": "ALGONEX 1.0 | 30-Hour National Hackathon at Maya Devi University",

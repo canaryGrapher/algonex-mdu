@@ -9,7 +9,7 @@ import GlassLogo from "./GlassLogo";
 type Pose = { pos: [number, number, number]; scale: number };
 
 /**
- * Where the glass "A" sits. At the hand-off it matches the Lottie's final logo
+ * Where the glass "A" sits. At the hand-off it matches the video's final logo
  * (centred, a little above middle, icon sized). Then it grows and glides to its
  * resting place beside the content while the call to action comes in.
  */
@@ -38,7 +38,7 @@ export default function HeroLinkedLogo({ lite }: { lite: boolean }) {
 
     // 0 before the CTA starts, 1 once it has fully arrived.
     const glide = smooth(M.handoffEnd, 0.97, p);
-    // Pop in from slightly smaller as the Lottie dissolves.
+    // Pop in from slightly smaller as the video dissolves.
     const appear = smooth(M.handoffStart, M.handoffEnd, p);
 
     target.current.set(

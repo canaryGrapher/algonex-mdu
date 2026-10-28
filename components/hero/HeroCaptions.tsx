@@ -9,11 +9,11 @@ import type { ProgressHandle } from "./types";
 type Props = { ref: React.Ref<ProgressHandle> };
 
 /**
- * Text that rides on top of the Lottie, timed to its scenes (progress is 0 to 1 of the clip):
+ * Text that rides on top of the video, timed to its scenes (progress is 0 to 1 of the clip):
  *  0.00 to 0.12  title card over the coder at the desk
  *  0.40 to 0.60  "Ideas to product" while the camera pushes into the code
  *  0.63 to 0.75  "Make it real" through the hyperspace warp
- * The final logo frames are left clean so the Lottie's own logo carries the moment.
+ * The final logo frames are left clean so the video's own logo carries the moment.
  */
 export default function HeroCaptions({ ref }: Props) {
   const root = useRef<HTMLDivElement>(null);

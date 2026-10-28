@@ -5,7 +5,7 @@ const listeners = new Set<Listener>();
 
 /**
  * Scroll progress of the pinned hero (0 to 1), shared between the GSAP timeline
- * and the WebGL scene so the glass logo can pick up where the Lottie ends.
+ * and the WebGL scene so the glass logo can pick up where the video ends.
  */
 export const heroProgress = {
   get: () => progress,
@@ -26,9 +26,9 @@ export const heroProgress = {
 export const HERO_MARKS = {
   /** How long the hero stays pinned, in viewport heights of scrolling. */
   pinLengthVh: 5,
-  /** The "presents" card dissolves into the Lottie over this first stretch of scroll. */
+  /** The "presents" card dissolves into the video over this first stretch of scroll. */
   presentsEnd: 0.1,
-  lottieEnd: 0.7,
+  videoEnd: 0.7,
   handoffStart: 0.68,
   handoffEnd: 0.8,
   ctaStart: 0.82,

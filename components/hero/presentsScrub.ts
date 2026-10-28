@@ -2,7 +2,7 @@ import type { gsap } from "@/lib/gsap";
 import { HERO_MARKS as M } from "@/lib/heroProgress";
 
 /**
- * Scroll-driven dissolve of the "presents" card into the Lottie (positions are
+ * Scroll-driven dissolve of the "presents" card into the video (positions are
  * fractions of the hero timeline). A short hold first, so the first scroll tick
  * does not rush the card away, then bars retreat while the card blurs and fades.
  */
