@@ -23,15 +23,15 @@ export default function FinalCta() {
   );
 
   return (
-    <section ref={root} id="register" className="relative overflow-hidden px-5 py-32 text-center sm:py-48">
+    <section ref={root} id="register" className="relative overflow-hidden px-5 py-20 text-center sm:py-48">
       <div
         aria-hidden
-        className="pointer-events-none absolute left-1/2 top-1/2 size-[60rem] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-50 blur-3xl"
+        className="pointer-events-none absolute left-1/2 top-1/2 size-[24rem] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-40 sm:size-[60rem] sm:opacity-50 sm:blur-3xl"
         style={{ background: "radial-gradient(circle, rgb(255 111 91 / .45), rgb(194 58 43 / .2) 45%, transparent 70%)" }}
       />
       <div className="relative">
         <p className="fc-fade kicker">Registrations close {event.registration.deadlineDisplay}</p>
-        <h2 className="mt-6 font-display text-5xl font-black leading-[0.95] tracking-tight text-white sm:text-8xl">
+        <h2 className="mt-6 font-display text-[clamp(2.25rem,12vw,3.25rem)] font-black leading-[0.98] tracking-tight text-white sm:text-8xl">
           <span className="block overflow-hidden">
             <span className="fc-line block">Your idea.</span>
           </span>
@@ -39,10 +39,10 @@ export default function FinalCta() {
             <span className="fc-line text-iris block">Our stage.</span>
           </span>
         </h2>
-        <div className="fc-fade mt-12">
+        <div className="fc-fade mt-8 sm:mt-12">
           <Countdown to={event.registration.deadline} />
         </div>
-        <div className="fc-fade mt-12">
+        <div className="fc-fade mt-8 sm:mt-12">
           <RegisterButton size="xl" />
         </div>
         <div className="fc-fade mt-5">

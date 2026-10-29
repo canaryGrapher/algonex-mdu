@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./mobile.css";
 
 @theme {
   /* Poster palette: near-black maroon, ember red, coral, peach and cream.

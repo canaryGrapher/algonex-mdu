@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { gsap, useGSAP } from "@/lib/gsap";
+import { isPhone, travel } from "@/lib/motion";
 
 type Props = {
   children: React.ReactNode;
@@ -20,12 +21,14 @@ export default function Reveal({ children, className = "", items = ":scope > *",
     () => {
       const targets = root.current?.querySelectorAll(items);
       if (!targets?.length) return;
+      const phone = isPhone();
       gsap.from(targets, {
-        y,
+        y: travel(y),
         opacity: 0,
-        filter: "blur(8px)",
-        duration: 1,
-        stagger,
+        // Blur is a per-frame filter pass; skipped on phones.
+        ...(phone ? {} : { filter: "blur(8px)" }),
+        duration: phone ? 0.6 : 1,
+        stagger: phone ? Math.min(stagger, 0.05) : stagger,
         ease: "power3.out",
         scrollTrigger: { trigger: root.current, start: "top 85%" },
       });

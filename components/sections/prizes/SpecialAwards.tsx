@@ -5,9 +5,9 @@ import Reveal from "@/components/ui/Reveal";
 
 export default function SpecialAwards() {
   return (
-    <div className="mt-24">
+    <div className="mt-14 sm:mt-24">
       <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
-        <h3 className="font-display text-3xl font-extrabold text-white sm:text-4xl">Special recognition</h3>
+        <h3 className="font-display text-2xl font-extrabold text-white sm:text-4xl">Special recognition</h3>
         <span className="font-mono text-sm text-ice/60">
           {prizes.specialAwards.length} awards · {formatINR(prizes.specialAwards[0].amount)} each
         </span>

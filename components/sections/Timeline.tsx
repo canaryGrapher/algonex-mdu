@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { timeline } from "@/lib/data";
 import { gsap, useGSAP } from "@/lib/gsap";
+import { isPhone } from "@/lib/motion";
 import Section from "@/components/ui/Section";
 import SectionHeading from "@/components/ui/SectionHeading";
 
@@ -22,18 +23,21 @@ export default function Timeline() {
           scrollTrigger: { trigger: q(".tl-list")[0], start: "top 60%", end: "bottom 60%", scrub: true },
         },
       );
+      const phone = isPhone();
       q(".tl-item").forEach((item) => {
         gsap.from(item.querySelector(".tl-body"), {
-          x: item.classList.contains("tl-right") ? 60 : -60,
+          // Single column on phones: a short rise, no sideways slide.
+          x: phone ? 0 : item.classList.contains("tl-right") ? 60 : -60,
+          y: phone ? 20 : 0,
           opacity: 0,
-          duration: 1,
+          duration: phone ? 0.6 : 1,
           ease: "power3.out",
           scrollTrigger: { trigger: item, start: "top 78%" },
         });
         gsap.to(item.querySelector(".tl-dot"), {
           scale: 1,
           backgroundColor: "#ff9e8c",
-          boxShadow: "0 0 24px #ff9e8c",
+          ...(phone ? {} : { boxShadow: "0 0 24px #ff9e8c" }),
           scrollTrigger: { trigger: item, start: "top 60%", toggleActions: "play none none reverse" },
         });
       });
@@ -58,14 +62,14 @@ export default function Timeline() {
             return (
               <li
                 key={t.id}
-                className={`tl-item relative grid py-8 pl-12 md:grid-cols-2 md:pl-0 ${right ? "tl-right" : ""}`}
+                className={`tl-item relative grid py-5 pl-10 sm:py-8 sm:pl-12 md:grid-cols-2 md:pl-0 ${right ? "tl-right" : ""}`}
               >
-                <span className="tl-dot absolute left-4 top-11 size-3 -translate-x-1/2 scale-75 rounded-full border border-white/40 bg-void md:left-1/2" />
+                <span className="tl-dot absolute left-4 top-8 size-3 sm:top-11 -translate-x-1/2 scale-75 rounded-full border border-white/40 bg-void md:left-1/2" />
                 <div className={`tl-body ${right ? "md:col-start-2 md:pl-16" : "md:pr-16 md:text-right"}`}>
                   <span className="font-mono text-xs uppercase tracking-[0.25em] text-lilac">{t.tag}</span>
-                  <h3 className="mt-2 font-display text-2xl font-extrabold text-white sm:text-3xl">{t.title}</h3>
+                  <h3 className="mt-2 font-display text-xl font-extrabold text-white sm:text-3xl">{t.title}</h3>
                   <p className="mt-1 font-mono text-sm text-ice/80">{t.time}</p>
-                  <p className={`mt-3 max-w-md text-ice/60 ${right ? "" : "md:ml-auto"}`}>{t.description}</p>
+                  <p className={`mt-2 max-w-md text-sm text-ice/60 sm:mt-3 sm:text-base ${right ? "" : "md:ml-auto"}`}>{t.description}</p>
                 </div>
               </li>
             );

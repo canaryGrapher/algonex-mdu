@@ -33,13 +33,13 @@ export default function Countdown({ to }: { to: string }) {
   ];
 
   return (
-    <div className="flex justify-center gap-2 sm:gap-4">
+    <div className="mx-auto flex max-w-md justify-center gap-2 sm:max-w-none sm:gap-4">
       {cells.map(([k, label]) => (
-        <div key={k} className="glass w-20 rounded-2xl py-4 text-center sm:w-28">
-          <span className="block font-display text-3xl font-black tabular-nums text-white sm:text-5xl">
+        <div key={k} className="glass min-w-0 flex-1 rounded-2xl py-3 text-center sm:w-28 sm:flex-none sm:py-4">
+          <span className="block font-display text-2xl font-black tabular-nums text-white sm:text-5xl">
             {parts ? String(parts[k]).padStart(2, "0") : "--"}
           </span>
-          <span className="mt-1 block text-[10px] uppercase tracking-[0.25em] text-ice/50">{label}</span>
+          <span className="mt-1 block text-[0.55rem] uppercase tracking-[0.15em] sm:text-[10px] sm:tracking-[0.25em] text-ice/50">{label}</span>
         </div>
       ))}
     </div>

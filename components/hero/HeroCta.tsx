@@ -2,13 +2,8 @@ import { event } from "@/lib/data";
 import LogoMark from "@/components/ui/LogoMark";
 import RegisterButton from "@/components/ui/RegisterButton";
 import SponsorBadge from "@/components/ui/SponsorBadge";
+import { heroFacts as facts } from "./heroFacts";
 
-const facts = [
-  { label: "When", value: event.dates.display },
-  { label: "Where", value: event.venue.display },
-  { label: "Prize pool", value: event.prizePoolDisplay },
-  { label: "Team", value: event.teamSize },
-];
 
 /** Final state of the hero: the main Register Now call to action. */
 export default function HeroCta() {

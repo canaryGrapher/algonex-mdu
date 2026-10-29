@@ -35,3 +35,12 @@ export const usePortrait = () => useMediaQuery(PORTRAIT_QUERY);
 
 /** Like usePortrait, but null until known. Use it before picking which asset to download. */
 export const usePortraitState = () => useMatchMedia(PORTRAIT_QUERY);
+
+/** Phones (and landscape phones). Heavy media and WebGL are skipped here. */
+export const PHONE_QUERY = "(max-width: 767px), (max-height: 500px) and (pointer: coarse)";
+
+/** True on phones. False until the browser has been checked. */
+export const usePhone = () => useMediaQuery(PHONE_QUERY);
+
+/** Like usePhone, but null until known. Use it before mounting anything heavy. */
+export const usePhoneState = () => useMatchMedia(PHONE_QUERY);

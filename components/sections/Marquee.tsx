@@ -8,17 +8,17 @@ import LogoMark from "@/components/ui/LogoMark";
 function Row({ outline = false }: { outline?: boolean }) {
   const words = [...site.marquee, ...site.marquee];
   return (
-    <div className="flex shrink-0 items-center gap-10 pr-10">
+    <div className="flex shrink-0 items-center gap-6 pr-6 sm:gap-10 sm:pr-10">
       {words.map((w, i) => (
-        <span key={i} className="flex items-center gap-10">
+        <span key={i} className="flex items-center gap-6 sm:gap-10">
           <span
-            className={`whitespace-nowrap font-display text-6xl font-black uppercase sm:text-8xl ${
+            className={`whitespace-nowrap font-display text-4xl font-black uppercase sm:text-8xl ${
               outline ? "text-transparent [-webkit-text-stroke:1.5px_rgb(255_227_216/0.45)]" : "text-glow"
             }`}
           >
             {w}
           </span>
-          <LogoMark className="size-10 shrink-0 sm:size-14" glow={false} />
+          <LogoMark className="size-7 shrink-0 sm:size-14" glow={false} />
         </span>
       ))}
     </div>
@@ -40,11 +40,12 @@ export default function Marquee() {
   );
 
   return (
-    <div ref={root} aria-hidden className="relative -rotate-2 overflow-hidden py-16 sm:py-24">
+    <div ref={root} aria-hidden className="relative -rotate-2 overflow-hidden py-8 sm:py-24">
       <div className="mq-a flex w-max">
         <Row />
       </div>
-      <div className="mq-b mt-4 flex w-max">
+      {/* The outlined second ribbon (text stroke) is desktop only. */}
+      <div className="mq-b mt-4 hidden w-max sm:flex">
         <Row outline />
       </div>
     </div>

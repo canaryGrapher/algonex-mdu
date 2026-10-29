@@ -1,0 +1,52 @@
+"use client";
+
+import { useRef, useState } from "react";
+import HeroCaptions from "./HeroCaptions";
+import HeroCta from "./HeroCta";
+import HeroIntro from "./HeroIntro";
+import HeroLoader from "./HeroLoader";
+import HeroPresents from "./HeroPresents";
+import HeroVideo from "./HeroVideo";
+import ScrollHint from "./ScrollHint";
+import type { HeroMediaStatus, ProgressHandle } from "./types";
+import { useHeroTimeline } from "./useHeroTimeline";
+
+export default function HeroDesktop() {
+  const section = useRef<HTMLElement>(null);
+  const video = useRef<ProgressHandle>(null);
+  const intro = useRef<ProgressHandle>(null);
+  const captions = useRef<ProgressHandle>(null);
+  const [status, setStatus] = useState<HeroMediaStatus>("loading");
+  const ready = status === "ready";
+  // Poster intro covers both a failed download and a deliberately skipped one.
+  const fallback = status === "missing" || status === "skipped";
+
+  useHeroTimeline({ section, layers: [video, intro, captions] });
+
+  return (
+    <section ref={section} id="top" className="relative h-svh w-full overflow-hidden">
+      {/* Poster backdrop, only used by the fallback intro if the video cannot load. */}
+      <div className={`hero-poster grain absolute inset-0 ${fallback ? "" : "invisible"}`}>
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url(/brand/poster-bg.webp)" }} />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0304]/40 via-transparent to-[#0a0304]/70" />
+      </div>
+
+      <div className="hero-media absolute inset-0">
+        <div className={`hero-video-bg absolute inset-0 bg-[#1c0608] ${ready ? "" : "invisible"}`}>
+          <HeroVideo ref={video} onStatus={setStatus} />
+          {/* Grain and vignette soften the video frames and melt the edges into the page. */}
+          <div className="grain pointer-events-none absolute inset-0" />
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_45%,rgb(10_3_4/.75)_100%)]" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-void/70 to-transparent" />
+        </div>
+        {ready && <HeroCaptions ref={captions} />}
+        {fallback && <HeroIntro ref={intro} />}
+        {status === "loading" && <HeroLoader />}
+      </div>
+
+      <HeroPresents />
+      <HeroCta />
+      <ScrollHint />
+    </section>
+  );
+}

@@ -8,7 +8,7 @@ type Props = { size?: "md" | "xl"; className?: string };
 
 const sizes = {
   md: "px-5 py-2.5 text-sm gap-2",
-  xl: "px-10 py-6 text-2xl gap-4 sm:px-16 sm:py-8 sm:text-4xl md:text-5xl",
+  xl: "px-7 py-4 text-[clamp(1rem,5.2vw,1.35rem)] gap-3 sm:px-16 sm:py-8 sm:text-4xl sm:gap-4 md:text-5xl",
 };
 
 /** Primary call to action. Links to the registration partner from data/event.json. */
@@ -38,7 +38,7 @@ export default function RegisterButton({ size = "md", className = "" }: Props) {
       rel={external ? "noopener noreferrer" : undefined}
       onMouseMove={onMove}
       onMouseLeave={onLeave}
-      className={`group relative inline-flex items-center justify-center overflow-hidden whitespace-nowrap rounded-full font-display font-extrabold uppercase tracking-[0.08em] text-white transition-shadow duration-500 ${sizes[size]} ${className}`}
+      className={`group relative inline-flex items-center justify-center overflow-hidden whitespace-nowrap rounded-full font-display font-extrabold uppercase tracking-[0.08em] text-white transition-shadow duration-500 ${size === "xl" ? "register-xl" : ""} ${sizes[size]} ${className}`}
       style={{
         background:
           "linear-gradient(110deg, #b32d1e 0%, #e5483a 45%, #ff6f5b 70%, #b32d1e 100%)",
@@ -51,7 +51,7 @@ export default function RegisterButton({ size = "md", className = "" }: Props) {
     >
       <span
         aria-hidden
-        className="pointer-events-none absolute inset-y-0 left-0 w-1/3 animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent"
+        className="pointer-events-none absolute inset-y-0 left-0 w-1/3 max-sm:hidden animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent"
       />
       <span className="relative">{ctaLabel}</span>
       <svg

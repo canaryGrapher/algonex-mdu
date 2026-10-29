@@ -37,12 +37,12 @@ export default function SectionHeading({ kicker, title, accent, intro, align = "
   const centered = align === "center";
 
   return (
-    <div ref={root} className={`mb-14 sm:mb-20 ${centered ? "mx-auto max-w-3xl text-center" : "max-w-4xl"}`}>
+    <div ref={root} className={`mb-10 sm:mb-20 ${centered ? "mx-auto max-w-3xl text-center" : "max-w-4xl"}`}>
       <p className={`sh-kicker kicker mb-5 flex items-center gap-3 ${centered ? "justify-center" : ""}`}>
         <span className="h-px w-8 bg-gradient-to-r from-transparent to-lilac" />
         {kicker}
       </p>
-      <h2 className="font-display text-4xl font-black leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl">
+      <h2 className="font-display text-[clamp(2rem,10vw,2.75rem)] font-black leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
         {words(title)}
         {accent && words(accent, "text-iris")}
       </h2>
