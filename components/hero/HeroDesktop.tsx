@@ -1,6 +1,7 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { ScrollTrigger } from "@/lib/gsap";
 import HeroCaptions from "./HeroCaptions";
 import HeroCta from "./HeroCta";
 import HeroIntro from "./HeroIntro";
@@ -22,6 +23,13 @@ export default function HeroDesktop() {
   const fallback = status === "missing" || status === "skipped";
 
   useHeroTimeline({ section, layers: [video, intro, captions] });
+
+  // The hero mounts after the screen check, so everything below it must be re-measured
+  // once its pin spacer exists.
+  useEffect(() => {
+    const id = requestAnimationFrame(() => ScrollTrigger.refresh());
+    return () => cancelAnimationFrame(id);
+  }, []);
 
   return (
     <section ref={section} id="top" className="relative h-svh w-full overflow-hidden">

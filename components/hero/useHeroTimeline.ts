@@ -44,6 +44,7 @@ export function useHeroTimeline({ section, layers }: Options) {
               scrub: 0.8,
               anticipatePin: 1,
               invalidateOnRefresh: true,
+              refreshPriority: 1,
               onUpdate: (self) => heroProgress.set(self.progress),
             },
           })

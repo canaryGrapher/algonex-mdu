@@ -10,7 +10,7 @@ export default function SmoothScroll() {
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     // Native touch scrolling is smoother and cheaper than JS-driven smoothing on phones.
-    if (isPhone() || window.matchMedia("(pointer: coarse)").matches) return;
+    if (isPhone()) return;
 
     const lenis = new Lenis({ lerp: 0.09, anchors: { offset: -72 } });
     lenis.on("scroll", ScrollTrigger.update);
